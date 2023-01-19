@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="stylecvMmain.css"/>
+	<title>cvmenu_me_contacter</title>
+</head>
+<body>
+    <header>
+		<img src="images/neige.jpg" alt="img_profil" style="width:13vw; height:10vw; margin-left: 5px;"/>
+		<h1>Maïlys ANDRIEU</h1>
+		<div id="barre">
+	
+			<img src="images/tel.jpg" alt="tel" class="img_coordonnees"/>
+			<a href="tel:06 30 82 98 84">06 30 82 98 84</a><br>
+			<img src="images/enveloppe.png" alt="enveloppe" class="img_coordonnees"/>
+			<a href="mailto:ljubav005@hotmail.com">
+			mailys-andrieu@wanadoo.fr</a><br>
+			<p>17 rue Gay Lussac<br>38100 Grenoble</p>
+		</div>
+	</header>
+<div id="ensemble">
+	<div id="navbar">
+         <ul>
+            <li><a class="nav_link" href="index.html">Présentation</a></li></li>
+             <li><a class="nav_link" href="cvmenucompetence.html">Mes compétences</a></li></li>
+             <li><a class="nav_link" href="cvmenuexperiences.html">Mes expériences professionnelles</a></li>
+            <li><a class="nav_link" href="cvmenuformations.html">Mes formations</a></li></li>
+            <li><a class="nav_link" href="cvmenuextrapro.html">Mes expériences extra-professionnelles</a></li></li>
+            <li><a class="nav_link"href="cvmenu_c_interets.html">Centres d'intérêts</a></li>
+            <li><a class="nav_link"href="cvmenu_me_contacter.html">Me contacter</a></li>
+        </ul>
+    </div>    
+
+    <form id="formulaire">
+        <h2>Me contacter</h2>
+        <label for="nom">Entrez votre nom</label>
+        <input type="text" placeholder="Nom" required id="nom" name="nom">
+        <label for="prenom">Entrez votre prénom</label>
+        <input type="text" placeholder="Prenom" required id="Prenom" name="Prenom"><br>
+        <label id= "email-label" for="email">Entrez votre adresse mail:</label>
+        <input type="email" required placeholder="monmail@gmail.com" id="email" name="email" ><br>
+        <label id= "number-label" for="tel">Entrez votre numéro de téléphone</label>   
+        <input type="number" required id="number" min="0600000000" max="0799999999" placeholder="06XXXXXXXX" name="number"><br>
+        <label for="naissance">Date de naissance:</label>
+
+        <input type="date" id="naissance" name="date-naissance"
+        value="2018-07-22"
+        min="1922-01-01" max="
+            <script>
+            date = new Date();
+            year = date.getFullYear();
+            month = date.getMonth() + 1;
+            day = date.getDate();
+            document.getElementById("current_date").innerHTML = day + "/" +  month + "/" + year;
+            </script>"><br>
+        <label for "commentaires">Écrivez votre message</label><br>
+        <textarea rows="8" cols="80"></textarea><br>
+        <div id="submit">
+      <input type="submit"  name="submit" value="Envoyer" class="bouton"></div>
+  <br>  
+    </form>
+</div>
+</body>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="styleMeContacter.css"/>
+	<title>me_contacter</title>
+</head>
+<body>
+<header>
+    <h1>Me contacter</h1>
+    <a class="bouton" href="CV.html">Revenir sur mon CV</a>
+</header>
+    <form id="formulaire">
+        <label for="nom">Entrez votre nom</label>
+    <input type="text" placeholder="Nom" required id="nom" name="nom">
+    <label for="prenom">Entrez votre prénom</label>
+    <input type="text" placeholder="Prenom" required id="Prenom" name="Prenom"><br>
+    <label id= "email-label" for="email">Entrez votre adresse mail:</label>
+    <input type="email" required placeholder="monmail@gmail.com" id="email" name="email" ><br>
+    <label id= "number-label" for="tel">Entrez votre numéro de téléphone</label>   
+    <input type="number" required id="number" min="0600000000" max="0799999999" placeholder="06XXXXXXXX" name="number"><br>
+    <label for="naissance">Date de naissance:</label>
+
+    <input type="date" id="naissance" name="date-naissance"
+       value="2018-07-22"
+       min="1922-01-01" max="
+        <script>
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.getElementById("current_date").innerHTML = day + "/" +  month + "/" + year;
+        </script>"><br>
+    <label for "commentaires">Écrivez votre message</label><br>
+    <textarea rows="8" cols="80"></textarea><br>
+    <div id="submit">
+      <input type="submit"  name="submit" value="Envoyer" ></div>
+  <br>  
+    </form>
+
+    <footer>
+		<a href="#"">revenir en haut de page<img src="images/fleche_haut.jpg" alt="fleche-vers-le-haut" style="width:10px;"></a>
+	</footer>
+</body>

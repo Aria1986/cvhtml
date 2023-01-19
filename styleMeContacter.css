@@ -1,0 +1,28 @@
+body{
+    background: url("images/fondo.jpg");
+    background-size: cover; 
+    font-family:Georgia,Verdana;
+
+}
+h1{
+    text-align: center;
+}
+#formulaire{
+    background-color: rgba(246,179,70, 0.7);
+    border-radius:10px;
+  width:800px;
+  position:relative;
+  margin:auto;
+  line-height: 60px;
+  padding:25px;
+  text-align: center;
+}
+.bouton{
+    text-decoration: none;
+     text-align: left;
+    border:#f0602a 0.7mm ridge;
+	background-color: #ffa73f;
+	padding:4px;
+	border-radius: 5%;
+	color:black
+}
