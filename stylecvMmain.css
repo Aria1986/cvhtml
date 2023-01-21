@@ -56,6 +56,7 @@ width: 30%;
 	font-size: 15px;
 	width:30%;
 	margin:0 auto;
+	padding:10px;
 	}
 #competences_generales li{
 	border-style: outset;
@@ -82,11 +83,11 @@ width: 30%;
 	padding-bottom: 10px; 
 	color: white; 
   }
-.html {width: 50%; background-color: #04AA6D;}
-.css {width: 50%; background-color: #0462aa;}
-.js{width: 2%; background-color: #00e0ff;}
+.html {width: 90%; background-color: #04AA6D;}
+.css {width: 90%; background-color: #0462aa;}
+.js{width: 50%; background-color: #00e0ff;}
 .Java{width: 10%; background-color: #aa4604;}
-.php{width: 10%; background-color: #8904aa;}
+.php{width: 50%; background-color: #8904aa;}
 
 .img_coordonnees{
 	width:20px;
@@ -120,9 +121,11 @@ border-radius: 5%;
 	display:grid;
 	margin: 0 auto;
 	grid: auto-flow dense / 1fr 1fr 1fr auto;
+
 }
 .img_act{
 	width:15vw;
+
 }
 #formulaire{
     background-color: rgba(246,179,70, 0.7);
